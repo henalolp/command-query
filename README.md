@@ -1,6 +1,16 @@
 # `@ubiquity-os-marketplace/command-query-user`
 
 This package helps users querying their information, from they wallet address, label access control or current XP.
+## Installation
+To install the package, run:
+```shell
+yarn add @ubiquity-os-marketplace/command-query-user
+```
+## Prerequisites
+Ensure you have the following prerequisites:
+
+- Node.js >= 14
+- Yarn Package manager
 
 ## Usage
 
@@ -11,6 +21,7 @@ The following commands are allowed:
 ```
 
 ## Running locally
+
 
 ### Supabase types
 
@@ -61,6 +72,9 @@ A valid configuration can be like:
     allowPublicQuery: true
     logLevel: INFO
 ```
+## Configuration Parameters
+- allowPublicQuery: Allows any user to query anyone else. If false, only org members can query others. Default is true.
+- logLevel: Sets the logging level. Possible values are DEBUG, INFO, WARN, ERROR. Default is INFO.
 
 ## Testing
 
